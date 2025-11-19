@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>灰原网</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="top-img">
+			<img src="img/1.jpg" alt="">
+		</div>
+		<div class="header">
+			<a href="index.html">首页</a>
+			<a href="about.html">关于灰原哀</a>
+			<a href="img.html">甄选图集</a>
+			<a href="video.html">精彩视频</a>
+			<a href="discuss.html">最新讨论</a>
+			<a class="active"href="contact.html">联系我们</a>
+		</div>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: #f2f2f2;
+			}
+			img{
+				object-fit: cover;
+			}
+			a{
+				text-decoration: none;
+			}
+			.page-title{
+				width: 1200px;
+				margin: 20px auto;
+			}
+			.page-title h3{
+				color: #1D2A61;
+				padding-left: 5px;
+				border-left: 5px solid #1D2A61;
+			}
+			.top-img img {
+			    display: block;
+			    width: 100%;
+			    height: 550px;
+			    object-fit: cover;
+			}
+			
+			.header {
+			    width: 100%;
+			    height: 60px;
+			    line-height: 60px;
+			    background: skyblue;
+			    text-align: center;
+			}
+			
+			.header a {
+			    text-decoration: none;
+			    margin: 0 80px;
+			    color: #fff;
+			}
+			.header .active{
+				color: red;
+			}
+			.header a:hover {
+			    color: red;
+			}
+			
+			.banner img {
+			    display: block;
+			    width: 100%;
+			    height: 550px;
+			    object-fit: cover;
+			}
+			
+			.home-about {
+			    width: 1200px;
+			    height: 730px;
+			    margin: 30px auto;
+			    padding: 20px;
+			    background: #fff;
+			}
+			.home-about-img{
+				float: left;
+				width: 500px;
+				height:700px;
+			}
+			.home-about-img img{
+				width: 100%;
+			}
+			.home-about-text{
+				float: right;
+				width:700px;
+			}
+			.img-box {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  width: 1200px;
+			  height: 420px;
+			  margin: auto;
+			}
+			
+			.img-box img {
+			  width: 350px;
+			  height: 200px;
+			  margin-bottom: 10px;
+			  padding: 10px 20px;
+			  background: #fff;
+			  box-shadow: inset 2px 5px 18px #1D2A61;
+			}
+			.img-box-2 {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  width: 1200px;
+			  height: 420px;
+			  margin: auto;
+			}
+			
+			.img-box-2 img {
+			  width: 350px;
+			  height: 200px;
+			  margin-bottom: 10px;
+			  padding: 10px 20px;
+			  background: #fff;
+			  box-shadow: inset 2px 5px 18px #1D2A61;
+			}
+			.img-box-3 {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  width: 1200px;
+			  height: 420px;
+			  margin: auto;
+			}
+			
+			.img-box-3 img {
+			  width: 350px;
+			  height: 200px;
+			  margin-bottom: 10px;
+			  padding: 10px 20px;
+			  background: #fff;
+			  box-shadow: inset 2px 5px 18px #1D2A61;
+			}
+			.img-box-5 {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  width: 1200px;
+			  height: 420px;
+			  margin: auto;
+			}
+			.img-box-5 img {
+			  width: 350px;
+			  height: 200px;
+			  margin-bottom: 10px;
+			  padding: 10px 20px;
+			  background: #fff;
+			  box-shadow: inset 2px 5px 18px #1D2A61;
+			}
+			.img-box-6 {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  width: 1200px;
+			  height: 420px;
+			  margin: auto;
+			}
+			.img-box-6 img {
+			  width: 350px;
+			  height: 200px;
+			  margin-bottom: 10px;
+			  padding: 10px 20px;
+			  background: #fff;
+			  box-shadow: inset 2px 5px 18px #1D2A61;
+			}
+			.img-box-7 {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  width: 1200px;
+			  height: 420px;
+			  margin: auto;
+			}
+			.img-box-7 img {
+			  width: 350px;
+			  height: 200px;
+			  margin-bottom: 10px;
+			  padding: 10px 20px;
+			  background: #fff;
+			  box-shadow: inset 2px 5px 18px #1D2A61;
+			}
+			.img-box-8 {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  width: 1200px;
+			  height: 420px;
+			  margin: auto;
+			}
+			.img-box-8 img {
+			  width: 350px;
+			  height: 200px;
+			  margin-bottom: 10px;
+			  padding: 10px 20px;
+			  background: #fff;
+			  box-shadow: inset 2px 5px 18px #1D2A61;
+			}
+			.img-box-9 {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  width: 1200px;
+			  height: 420px;
+			  margin: auto;
+			}
+			.img-box-9 img {
+			  width: 350px;
+			  height: 200px;
+			  margin-bottom: 10px;
+			  padding: 10px 20px;
+			  background: #fff;
+			  box-shadow: inset 2px 5px 18px #1D2A61;
+			}
+			.page-title-2{
+				width: 1200px;
+				margin: 20px auto;}
+				.page-title-2 h3{
+					color: #1D2A61;
+					padding-left: 5px;
+					border-left: 5px solid #1D2A61;
+				}
+			.news{display: flex;
+			  flex-wrap: wrap;
+			  justify-content: space-between;
+			  width: 1200px;
+			  height: 420px;
+			  margin: auto;
+			  height: auto;
+			  margin-bottom: 20px;
+			}
+			.news-left{
+				width: 500px;
+				height: 350px;
+				color: #fff;
+				background: #1D2A61;
+				transition: all 0.3s;
+			}
+			.news-left-img {
+				width: 100%;
+				height: 300px;
+				overflow: hidden;
+			}
+			.news-left-img img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				transition: all 0.3s;
+			}
+			.news-left:hover{
+				transform: translateY(-10px);
+				box-shadow: 2px 1px 10px #ccc;
+			}
+			.news-left-img:hover img{
+				transform: scale(1.2);
+			}
+			.news-left p{
+				height: 50px;
+				line-height: 50px;
+				padding-left: 10px;
+			}
+			.news-right{
+				width: 630px;
+				background: #fff;
+				padding:10px 20px;
+			}
+			.news-right a{
+				display: block;
+				color: black;
+				height: 40px;
+				line-height: 40px;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;
+				overflow: hidden;
+				border-bottom: 1px dashed #ccc;
+			}
+			.news a:hover{
+				color: red;
+			}
+			.footer{
+				text-align: center;
+				background: black;
+				color: #fff;
+				padding: 10px 0px;
+			}
+			.contact{
+				width: 1160px;
+				margin: auto;
+				background: #fff;
+				padding: 20px;
+			}
+			.contact ul li {
+				display: flex;
+				list-style: none;
+				margin-bottom: 20px;
+			}
+			.contact ul li span{
+				display:inline-block;
+				width: 70px;
+				height: 30px;
+				line-height: 30px;
+				text-align: justify;
+			}
+			.contact ul li b{
+				display:inline-block;
+				height: 30px;
+				line-height: 30px;
+			}
+			.contact ul li span::after{
+				content:'';
+				display: inline-block;
+				width: 100%;
+			}
+			.contact input{
+				outline: none;
+				width: 300px;
+				height: 30px;
+				padding-left: 10px;
+				font-size: 14px;
+			}
+			.contact textarea{
+				padding: 10px;
+				font-size: 14px;
+			}
+			.contact button{
+				cursor: pointer;
+				color:#fff;
+				background: #1D2A61;
+				padding: 5px 20px;
+				border: none;
+				margin-left: 75px;
+			}
+			.contact button:hover{
+				opacity: 0.8;
+			}
+		</style>
+		<div class="page-title">
+			<h3>联系我们</h3>
+		</div>
+		<div class="contact">
+			<form>
+				<ul>
+					<li>
+						<span>姓名</span><b>:</b>
+						<input type="text" placeholder="请输入您的姓名">
+					</li>
+					<li>
+						<span>手机号</span><b>:</b>
+						<input type="text" placeholder="请输入您的手机号">
+					</li>
+					<li>
+						<span>微信</span><b>:</b>
+						<input type="text" placeholder="请输入您的微信号">
+					</li>
+					<li>
+						<span>内容</span><b>:</b>
+						<textarea cols="80" rows="8" placeholder="请输入您想表达的内容"></textarea>
+					</li>
+					<li>
+						<button>提交</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<div class="footer">
+			<p>版权所有：242244206</p>
+		</div>
+	</body>
+</html>
